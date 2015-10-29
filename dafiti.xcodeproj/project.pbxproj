@@ -14,6 +14,7 @@
 		54E192C81BE2A37800BFDC8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E192C61BE2A37800BFDC8B /* LaunchScreen.storyboard */; };
 		54E192D31BE2A37800BFDC8B /* dafitiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E192D21BE2A37800BFDC8B /* dafitiTests.swift */; };
 		54E192DE1BE2A37800BFDC8B /* dafitiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E192DD1BE2A37800BFDC8B /* dafitiUITests.swift */; };
+		54E192EE1BE2C76500BFDC8B /* ItemLista.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E192ED1BE2C76500BFDC8B /* ItemLista.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		54E192D91BE2A37800BFDC8B /* dafitiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dafitiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E192DD1BE2A37800BFDC8B /* dafitiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dafitiUITests.swift; sourceTree = "<group>"; };
 		54E192DF1BE2A37800BFDC8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54E192ED1BE2C76500BFDC8B /* ItemLista.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemLista.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				54E192C41BE2A37800BFDC8B /* Assets.xcassets */,
 				54E192C61BE2A37800BFDC8B /* LaunchScreen.storyboard */,
 				54E192C91BE2A37800BFDC8B /* Info.plist */,
+				54E192ED1BE2C76500BFDC8B /* ItemLista.xib */,
 			);
 			path = dafiti;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			files = (
 				54E192C81BE2A37800BFDC8B /* LaunchScreen.storyboard in Resources */,
 				54E192C51BE2A37800BFDC8B /* Assets.xcassets in Resources */,
+				54E192EE1BE2C76500BFDC8B /* ItemLista.xib in Resources */,
 				54E192C31BE2A37800BFDC8B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +488,7 @@
 				54E192E41BE2A37800BFDC8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54E192E51BE2A37800BFDC8B /* Build configuration list for PBXNativeTarget "dafitiTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +497,7 @@
 				54E192E71BE2A37800BFDC8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54E192E81BE2A37800BFDC8B /* Build configuration list for PBXNativeTarget "dafitiUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +506,7 @@
 				54E192EA1BE2A37800BFDC8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
