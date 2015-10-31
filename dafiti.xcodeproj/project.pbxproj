@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5478A1261BE3F7AD003FF770 /* ItemLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5478A1251BE3F7AD003FF770 /* ItemLista.swift */; };
+		5478A1281BE4204F003FF770 /* DetalheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5478A1271BE4204F003FF770 /* DetalheView.swift */; };
 		54E192BE1BE2A37800BFDC8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E192BD1BE2A37800BFDC8B /* AppDelegate.swift */; };
 		54E192C01BE2A37800BFDC8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E192BF1BE2A37800BFDC8B /* ViewController.swift */; };
 		54E192C31BE2A37800BFDC8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E192C11BE2A37800BFDC8B /* Main.storyboard */; };
@@ -14,7 +16,6 @@
 		54E192C81BE2A37800BFDC8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E192C61BE2A37800BFDC8B /* LaunchScreen.storyboard */; };
 		54E192D31BE2A37800BFDC8B /* dafitiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E192D21BE2A37800BFDC8B /* dafitiTests.swift */; };
 		54E192DE1BE2A37800BFDC8B /* dafitiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E192DD1BE2A37800BFDC8B /* dafitiUITests.swift */; };
-		54E192EE1BE2C76500BFDC8B /* ItemLista.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E192ED1BE2C76500BFDC8B /* ItemLista.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5478A1251BE3F7AD003FF770 /* ItemLista.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemLista.swift; sourceTree = "<group>"; };
+		5478A1271BE4204F003FF770 /* DetalheView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheView.swift; sourceTree = "<group>"; };
 		54E192BA1BE2A37800BFDC8B /* dafiti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dafiti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E192BD1BE2A37800BFDC8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54E192BF1BE2A37800BFDC8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +51,6 @@
 		54E192D91BE2A37800BFDC8B /* dafitiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dafitiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E192DD1BE2A37800BFDC8B /* dafitiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dafitiUITests.swift; sourceTree = "<group>"; };
 		54E192DF1BE2A37800BFDC8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		54E192ED1BE2C76500BFDC8B /* ItemLista.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemLista.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,14 @@
 		54E192BC1BE2A37800BFDC8B /* dafiti */ = {
 			isa = PBXGroup;
 			children = (
+				5478A1251BE3F7AD003FF770 /* ItemLista.swift */,
 				54E192BD1BE2A37800BFDC8B /* AppDelegate.swift */,
 				54E192BF1BE2A37800BFDC8B /* ViewController.swift */,
+				5478A1271BE4204F003FF770 /* DetalheView.swift */,
 				54E192C11BE2A37800BFDC8B /* Main.storyboard */,
 				54E192C41BE2A37800BFDC8B /* Assets.xcassets */,
 				54E192C61BE2A37800BFDC8B /* LaunchScreen.storyboard */,
 				54E192C91BE2A37800BFDC8B /* Info.plist */,
-				54E192ED1BE2C76500BFDC8B /* ItemLista.xib */,
 			);
 			path = dafiti;
 			sourceTree = "<group>";
@@ -234,7 +237,6 @@
 			files = (
 				54E192C81BE2A37800BFDC8B /* LaunchScreen.storyboard in Resources */,
 				54E192C51BE2A37800BFDC8B /* Assets.xcassets in Resources */,
-				54E192EE1BE2C76500BFDC8B /* ItemLista.xib in Resources */,
 				54E192C31BE2A37800BFDC8B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				54E192C01BE2A37800BFDC8B /* ViewController.swift in Sources */,
+				5478A1261BE3F7AD003FF770 /* ItemLista.swift in Sources */,
+				5478A1281BE4204F003FF770 /* DetalheView.swift in Sources */,
 				54E192BE1BE2A37800BFDC8B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -391,7 +395,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -404,6 +408,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = dafiti/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.antoniodesouza.dafiti;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -415,6 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = dafiti/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.antoniodesouza.dafiti;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ItemLista.setobj(NSDictionary) -&gt; ():ItemLista.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "( data[&quot;salePrice&quot;] as! NSNumber ).stringValue">
+            </PersistentString>
+            <PersistentString
+               value = "data[&quot;manufacture&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.tableView(UITableView, cellForRowAtIndexPath : NSIndexPath) -&gt; UITableViewCell:ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "self.items.objectAtIndex(0)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.(viewDidLoad(ViewController) -&gt; () -&gt; ()).(closure #1):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "jsonResults[&quot;products&quot;] as! NSArray">
+            </PersistentString>
+            <PersistentString
+               value = "( jsonResults[&quot;products&quot;] as! NSArray ).objectAtIndex(0) as! NSArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetalheView.viewDidLoad() -&gt; ():DetalheView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.parentViewController">
+            </PersistentString>
+            <PersistentString
+               value = "data">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ItemLista.setobj(NSMutableDictionary) -&gt; ():ItemLista.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.prepareForSegue(UIStoryboardSegue, sender : AnyObject?) -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "( sender as! ViewController ).item">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ItemLista.setobj(AnyObject) -&gt; ():ItemLista.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "data[&quot;salePrice&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
