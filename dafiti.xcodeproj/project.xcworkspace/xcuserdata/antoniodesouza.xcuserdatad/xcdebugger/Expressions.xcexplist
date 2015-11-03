@@ -14,13 +14,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "ViewController.tableView(UITableView, cellForRowAtIndexPath : NSIndexPath) -&gt; UITableViewCell:ViewController.swift">
+         contextName = "ItemLista.setobj(AnyObject) -&gt; ():ItemLista.swift">
          <PersistentStrings>
             <PersistentString
-               value = "indexPath.row">
-            </PersistentString>
-            <PersistentString
-               value = "self.items.objectAtIndex(0)">
+               value = "data[&quot;salePrice&quot;]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -39,10 +36,25 @@
          contextName = "DetalheView.viewDidLoad() -&gt; ():DetalheView.swift">
          <PersistentStrings>
             <PersistentString
-               value = "self.parentViewController">
+               value = "img.frame.height">
+            </PersistentString>
+            <PersistentString
+               value = "img.frame.width">
+            </PersistentString>
+            <PersistentString
+               value = "UIScreen.mainScreen().bounds.width">
             </PersistentString>
             <PersistentString
                value = "data">
+            </PersistentString>
+            <PersistentString
+               value = "UIScreen.mainScreen().bounds.height">
+            </PersistentString>
+            <PersistentString
+               value = "img.frame.origin.y">
+            </PersistentString>
+            <PersistentString
+               value = "img.frame.origin.x">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -58,10 +70,13 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "ItemLista.setobj(AnyObject) -&gt; ():ItemLista.swift">
+         contextName = "ViewController.tableView(UITableView, cellForRowAtIndexPath : NSIndexPath) -&gt; UITableViewCell:ViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "data[&quot;salePrice&quot;]">
+               value = "indexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "self.items.objectAtIndex(0)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

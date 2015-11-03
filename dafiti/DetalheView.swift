@@ -15,29 +15,35 @@ class DetalheView: UIViewController, UIScrollViewDelegate {
     @IBOutlet var name: UILabel!
     @IBOutlet var value: UILabel!
     @IBOutlet var longdescription: UITextView!
-    @IBOutlet var scrollView : UIScrollView!
+    @IBOutlet var scrollView: UIScrollView!
+    @IBOutlet var viewdetalhe: UIView!
+    
     
     
     var data : NSDictionary!
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView = UIScrollView(frame: view.bounds)
-        scrollView.backgroundColor = UIColor.blackColor()
-        //scrollView.contentSize = self.view.bounds.size
-        scrollView.delegate = self
-        scrollView.minimumZoomScale = 0.1
-        scrollView.maximumZoomScale = 4.0
-        scrollView.zoomScale = 1.0
-        //scrollView.autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight
-        
-
-        self.navigationController?.setToolbarHidden(false, animated: false)
         self.name.text? = self.data["name"] as! String
         self.value.text? = ( data["salePrice"] as! NSNumber ).stringValue
         self.longdescription.text? = self.data["longDescription"] as! String
+        
+        
+        self.viewdetalhe.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height * 1.5 )
+        
+        
+        self.scrollView.contentSize = CGSizeMake(UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height)
+        self.scrollView.autoresizingMask = [.FlexibleWidth , .FlexibleHeight]
+        
+        
         
         let imgurl : String = ( self.data["image"] as! String ).stringByReplacingOccurrencesOfString("_sc", withString: "_sa")
         

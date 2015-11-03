@@ -13,17 +13,41 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     @IBOutlet
-    weak var tabela: UITableView!
+    var tabela: UITableView!
     var items: NSArray = []
+    var refreshControl: UIRefreshControl?
+
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        self.tabela.dataSource = self
-        self.tabela.delegate = self
+        refreshControl = UIRefreshControl()
+        refreshControl!.addTarget(self,
+            action: "handleRefresh:",
+            forControlEvents: .ValueChanged)
         
+        
+        
+        
+        self.tabela.addSubview(refreshControl!)
+        self.CarregarJSON()
+        
+
+    }
+    
+    
+    
+    
+    func CarregarJSON()
+    {
+    
         
         
         let apiURL : NSURL = NSURL(string:"https://api.bestbuy.com/v1/products((search=macbook)&manufacturer=apple)?apiKey=aw732yexbxrfqcxdy2cjw94q&sort=name.asc&show=sku,name,salePrice,manufacturer,image,thumbnailImage,longDescription,shortDescription&pageSize=15&page=2&callback=&format=json")!
@@ -35,8 +59,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             do {
                 jsonResults = try NSJSONSerialization.JSONObjectWithData(data!, options: [])
-                self.items = jsonResults["products"] as! NSArray
-                self.tabela.reloadData()
+                self.items = jsonResults["products"] as! NSArray                
+                //self.tabela.reloadData()
+                
+                dispatch_async(dispatch_get_main_queue(), {
+                    self.tabela.reloadData()
+                    
+                });
+                
                 
             } catch let error as NSError {
                 print(error.localizedDescription)
@@ -45,10 +75,34 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
         })
         
-        self.tabela.reloadData()
         apijson.resume()
         
+    }
 
+    
+    func handleRefresh(paramSender: AnyObject){
+        
+        //self.tabela.reloadData();
+        self.refreshControl!.endRefreshing()
+        
+        /*
+        
+        let popTime = dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC))
+        dispatch_after(popTime,
+            dispatch_get_main_queue(), {
+                
+                self.allTimes.append(NSDate())
+                self.refreshControl!.endRefreshing()
+                let indexPathOfNewRow = NSIndexPath(forRow: self.allTimes.count - 1,
+                    inSection: 0)
+                
+                self.tableView!.insertRowsAtIndexPaths([indexPathOfNewRow],
+                    withRowAnimation: .Automatic)
+                
+        })
+
+        */
+        
     }
 
     
